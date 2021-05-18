@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <img src={react} alt="react" />
-      Hello from App
+      <h3>LANGUAGE CARDS</h3>
       <Box />
     </div>
   );
