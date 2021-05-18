@@ -6,9 +6,8 @@ import react from "./react.svg";
 function App() {
   return (
     <div className="App">
-      <div className="top">
-        <img className="react_svg" src={react} alt="react" />
-      </div>
+      <img src={react} alt="react" />
+      Hello from App
       <Card />
     </div>
   );

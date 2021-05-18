@@ -1,19 +1,12 @@
-.Main_box{
-    box-sizing: border-box;
-    width: 100px;
-    height: 100px;
+.Langcard{
     border:1px solid black;
-    background-color: white;
+    width:100px;
+    height:100px;
     display:flex;
     flex-direction: column;
     align-items: center;
 }
-.Card_box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-img{
-    margin-top:5px;
-    width: 50%;
+.logo{
+    width:50%;
+    padding:10px 10px 0px 10px;
 }

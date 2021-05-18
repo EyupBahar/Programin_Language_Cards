@@ -3,28 +3,25 @@ import "./Card.css";
 import dummyImg from "../assets/cpp.png";
 import { useState } from "react";
 
-export default function Card({ logo, name, desc, author, date }) {
+export default function Card() {
   const [visible, setVisible] = useState(false);
-
   const handleClick = () => {
     setVisible(!visible);
   };
   return (
-    <div className="Main_box" onClick={handleClick}>
+    <div onClick={handleClick}>
       {!visible ? (
         <>
-          <div className="Card_box">
-            <img src={dummyImg} alt="cpp" />
-          </div>
-          <div>
+          <div className="Langcard">
+            <img className="logo" src={dummyImg} alt="cpp" />
             <p>Cpp</p>
           </div>
         </>
       ) : (
         <ul>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>dfd</li>
+          <li>fds</li>
+          <li>fd</li>
         </ul>
       )}
     </div>

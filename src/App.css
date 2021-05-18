@@ -7,9 +7,6 @@ body{
     align-items: center;
     /* background-color: red; */
 }
-.top{
-    width:30%;
-    display:flex;
-    flex-direction:column;
-    align-items: center;
+img{
+    width: 20%;
 }
