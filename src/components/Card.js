@@ -18,11 +18,13 @@ export default function Card({ logo, name, desc, date, author }) {
           </div>
         </>
       ) : (
-        <ul>
-          <li>{desc}</li>
-          <li>{date}</li>
-          <li>{author}</li>
-        </ul>
+        <div className="list_side">
+          <ul>
+            <li>{desc}</li>
+            <li>{date}</li>
+            <li>{author}</li>
+          </ul>
+        </div>
       )}
     </div>
   );
