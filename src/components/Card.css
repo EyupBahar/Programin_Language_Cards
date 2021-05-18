@@ -2,11 +2,25 @@
     border:1px solid black;
     width:100px;
     height:100px;
+    margin: 10px;
     display:flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 }
 .logo{
     width:50%;
     padding:10px 10px 0px 10px;
+    /* margin: 10px; */
 }
+
+.cover{
+    background-color: yellow;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    width:20rem;
+}
+

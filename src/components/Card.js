@@ -1,27 +1,27 @@
 import React from "react";
 import "./Card.css";
-import dummyImg from "../assets/cpp.png";
 import { useState } from "react";
 
-export default function Card() {
+export default function Card({ logo, name, desc, date, author }) {
+  // ! Bu satırda car({}) içindeki elementler birer props ev box js içerisinden props ile bu isimlerle bilgileri çektik. Aynı js içinde hem bilgiyi çekip (data.js) hem de map edilemiyor. Bunun için Box.js içinde map ederek card.js de çağırdık...
   const [visible, setVisible] = useState(false);
   const handleClick = () => {
     setVisible(!visible);
   };
   return (
-    <div onClick={handleClick}>
+    <div className="container" onClick={handleClick}>
       {!visible ? (
         <>
           <div className="Langcard">
-            <img className="logo" src={dummyImg} alt="cpp" />
-            <p>Cpp</p>
+            <img src={logo} alt="logo" className="logo" />
+            <p>{name}</p>
           </div>
         </>
       ) : (
         <ul>
-          <li>dfd</li>
-          <li>fds</li>
-          <li>fd</li>
+          <li>{desc}</li>
+          <li>{date}</li>
+          <li>{author}</li>
         </ul>
       )}
     </div>
